@@ -2,6 +2,18 @@
 //para comentar várias linhas shift + alt + a.
 const r = require('readline-sync');
 
+//contador de 0 a 10, mas ele não termina até passar de 10. Ainda incompleto.
+/* let contador1 = 0;
+
+while (contador1 <= 10) {
+    contador1 = parseFloat(r.question("Digite um Número de (0 a 10): "));
+    if (contador1 < 0 || contador1 > 10) {
+        console.log("Numero inválido. Digite um Número de (0 a 10): ");
+    }
+    
+} */
+
+//contador de 0 a 10 com Do While.
 /* let nota;
 
 do {
@@ -15,7 +27,7 @@ do {
 
 console.log("Nota válida: " + nota); */
 
-let soma = 0;
+/* let soma = 0;
 let contador = 1;
 
 //contador para controlar o numero de notas
@@ -33,4 +45,17 @@ while (contador <= 5) {
 let media = soma / 5;
 
 //printa a média e usa toFixed para limitar a 2 casas decimais.
-console.log("A média é: " + media.toFixed(2));
+console.log("A média é: " + media.toFixed(2)); */
+
+//media com Do While.
+let somaDoWhile = 0;
+let contadorDoWhile = 1;
+
+do {
+    let nota = parseFloat(r.question(`Nota ${contadorDoWhile}: `));
+    somaDoWhile += nota;
+    contadorDoWhile++;
+} while (contadorDoWhile <= 5);
+
+let mediaDoWhile = somaDoWhile / 5;
+console.log("A média é: " + mediaDoWhile.toFixed(2));
