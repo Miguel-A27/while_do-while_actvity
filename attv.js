@@ -2,8 +2,15 @@
 //para comentar várias linhas shift + alt + a.
 const r = require('readline-sync');
 
+let cronometro1 = 0;
+
+while (cronometro1 <= 10) {
+    console.log(cronometro1);
+    cronometro1++;
+}
+
 //contador de 0 a 10, mas ele não termina até passar de 9. Ainda incompleto.
-let contador1 = 0;
+/* let contador1 = 0;
 
 while (contador1 <= 9) {
     contador1 = parseFloat(r.question("Digite uma Nota de (0 a 10): "));
@@ -12,7 +19,7 @@ while (contador1 <= 9) {
         console.log("Nota inválida.");
     }
     
-} console.log("Nota válida: " + contador1);
+} console.log("Nota válida: " + contador1); */
 
 //contador de 0 a 10 com Do While.
 /* let nota;
@@ -28,7 +35,7 @@ do {
 
 console.log("Nota válida: " + nota); */
 
-//???
+//Média com While
 /* let soma = 0;
 let contador = 1;
 
